@@ -1,0 +1,11 @@
+{ 
+"deviName":"Redmi",
+"automationName":"appium",
+"platformName":"Android",
+"platformVersion":"9",
+"UDID":"d6c768cf9804",
+"appPackage":"io.appium.android.apis",
+"appActivity":".ApiDemos",
+"localport":"http://localhost:4723/wd/hub"
+
+}

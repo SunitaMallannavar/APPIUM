@@ -1,15 +1,17 @@
-package appiumtestscript;
+package appium.drivermethods;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.Connection;
 
-public class GeneralStoreTap {
+public class NetworkConnections {
 
 	public static void main(String[] args) throws MalformedURLException {
 		DesiredCapabilities dc = new DesiredCapabilities();
@@ -28,9 +30,24 @@ public class GeneralStoreTap {
 		  
 		
 		AndroidDriver driver = new AndroidDriver(url, dc);
-
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 
-		  
+		Connection currentstate = driver.getConnection();
+		
+		System.out.println(currentstate);
+		driver.setConnection(Connection.WIFI);
+		
+		System.out.println(driver.getConnection());
+		
+		driver.setConnection(Connection.DATA);
+		
+		System.out.println(driver.getConnection());
+		
+		
+		driver.setConnection(Connection.AIRPLANE);
+		System.out.println(driver.getConnection());
+		
+
 	}
 
 }

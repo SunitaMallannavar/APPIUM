@@ -21,7 +21,9 @@ public class GeneralStoreScroll {
 		  dc.setCapability("platformName", "Android");
 		  dc.setCapability("platformVersion", "9");
 		  dc.setCapability("automationName", "appium");
-		  dc.setCapability("UDID", "d6c768cf9804");
+		  dc.setCapability("UDID", "c74bf4a40106");
+		  dc.setCapability("appPackage", "com.androidsample.generalstore");
+			dc.setCapability("appActivity", ".SplashActivity");
 		  //DC for Android 
 		 dc.setCapability("app","C:\\Users\\Admin\\Downloads\\APPs\\General-Store (1).apk");
 		 
