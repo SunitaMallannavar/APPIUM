@@ -16,6 +16,7 @@ public class SwitchingMultipleAPPs {
 		
 		AppiumDriverLocalService server=AppiumDriverLocalService.buildDefaultService();
 		server.start();
+		
 		DesiredCapabilities dc = new DesiredCapabilities();
 		  // Common DC (Android or IOS)
 		  dc.setCapability("deviceName", "Redmi");  
